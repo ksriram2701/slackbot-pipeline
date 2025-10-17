@@ -3,7 +3,7 @@ import umap.umap_ as umap
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-centroid_model = SentenceTransformer(r"models\all-MiniLM-L6-v2")
+centroid_model = SentenceTransformer(r"all-MiniLM-L6-v2")
 
 
 def reduce_dimensionality(embeddings):
@@ -44,3 +44,4 @@ def get_top_keywords(cluster_keywords_list, model, top_n=3):
         top_indices = distances.argsort()[:top_n]
         cluster_top_keywords[cid] = [cluster_keywords_list[cid][i] for i in top_indices]
     return cluster_top_keywords
+
