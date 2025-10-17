@@ -45,11 +45,13 @@ This converts textual keywords into numerical vectors suitable for clustering.
 
 **UMAP** is applied to reduce embedding dimensions, helping visualize and cluster high-dimensional embeddings efficiently.
 
-![Clustering Visualization](assets/scatter.png)
+
 
 ---
 
 ## 5️⃣ Clustering Keywords
+
+![Clustering Visualization](assets/scatter.png)
 
 **HDBSCAN** is used to cluster the reduced embeddings.  
 
